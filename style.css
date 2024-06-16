@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* light pink section */
+body {
+    background-color: rgb(246, 223, 247);
+    font-family: "Lora", serif;
+}
+
+/* purple svg img */
+.purple-container {
+    height: 45dvh;
+    width: 100%;
+    z-index: -1;
+}
+
+.purple-container svg {
+    height: 45dvh;
+    width: 100%;
+    
+}
+
+/* card section */
+.card {
+    background-color: #f8f4f7;
+    margin: 0dvh auto 0 auto;
+    padding: 2rem;
+    transform: translateY(-140px);
+    max-width: 50%;
+    z-index: 1;
+}
+
+.card ul li {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.card nav div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+
+.card p.show {
+    display: block;
+}
+
+/* buttons */
+.btn--minus, .btn--plus {
+    /* display: none; */
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    flex-shrink: 0;
+}
+
+.hidden {
+    /* visibility: hidden; */
+    display: none;
+    
+}
+
+/* FAQ section */
+.star {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsive */
+@media only screen and (min-width: 763px) {
+    .background-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .card {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .background-mobile {
+        display: block;
+    }
+
+    .background-desktop {
+        display: none;
+    }
+
+    .card {
+        max-width: 80%;
+    }
+}
+
